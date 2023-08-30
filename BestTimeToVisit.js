@@ -182,11 +182,15 @@ function BestTimeToVisit() {
                                             </div>
                                             <div className="offcanvas-body">
                                                 <h6 className='my-3  fw-bold text-center '>{time.sidehead1}</h6>
-                                                <p className="tindent my-3">{time.sidepara1}</p>
-                                                <h6 className='my-3 fw-bold text-center'>{time.sidehead2}</h6>
-                                                <p className="tindent my-3">{time.sidepara2}</p>
-                                                <h6 className='my-3 fw-bold text-center'>{time.sidehead3}</h6>
-                                                <p className="tindent my-3">{time.sidepara3}</p>
+                                                <div className='offcanvascontent'>
+                                                  <p className="offtindent my-3">{time.sidepara1}</p>
+                                                  <h6 className='my-3 fw-bold text-center'>{time.sidehead2}</h6>
+                                                  <p className="offtindent my-3">{time.sidepara2}</p>
+                                                  <h6 className='my-3 fw-bold text-center'>{time.sidehead3}</h6>
+                                                  <p className="offtindent my-3">{time.sidepara3}</p>
+
+                                                </div>
+                                                
 
                                             </div>
                                         </div>
@@ -205,12 +209,15 @@ function BestTimeToVisit() {
                                                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                             </div>
                                             <div className="offcanvas-body">
+                                                <div className='offcanvascontent'>
                                                 <h6 className='my-3  fw-bold text-center'>{time.sidehead1}</h6>
-                                                <p className="tindent  my-3">{time.sidepara1}</p>
+                                                <p className="indent  my-3">{time.sidepara1}</p>
                                                 <h6 className='my-3 fw-bold text-center'>{time.sidehead2}</h6>
-                                                <p className="tindent  my-3">{time.sidepara2}</p>
+                                                <p className="indent  my-3">{time.sidepara2}</p>
                                                 <h6 className='my-3 fw-bold text-center'>{time.sidehead3}</h6>
-                                                <p className="tindent my-3">{time.sidepara3}</p>
+                                                <p className="indent my-3">{time.sidepara3}</p>
+                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
