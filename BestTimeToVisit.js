@@ -1,17 +1,12 @@
 import React from 'react'
 import './besttimetovisit.css';
-// import imagethree from "./Gallery/image2.jpeg";
-// import imagetwo from "./Gallery/image1.jpeg";
-// import imageone from "./Gallery/image.jpeg";
-// import climate from "./Gallery/Climate.jpeg"
+
 import Timetovisit from './BestTimeTovisitContent';
 import firstimage from './assets/besttime/Climate.jpeg';
 import image from './assets/besttime/image.jpeg';
 import image1 from './assets/besttime/image1.jpeg';
 import image2 from './assets/besttime/image2.jpeg';
-// import chennai from './assets/besttime/chennai1.jpeg';
-// import chennai1 from './assets/besttime/chennai2.jpeg';
-// import chennai2 from './assets/besttime/chennai3.jpeg';
+
 
 
 
