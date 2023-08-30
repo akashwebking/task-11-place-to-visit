@@ -1,0 +1,23 @@
+.tindent{
+  text-indent: 60px;
+  text-align: justify;
+}
+
+.card-body p{
+  text-indent: 0;
+}
+
+.modalzintex{
+  z-index: 9;
+}
+
+.image img{
+  width: 150px;
+  height: 200px;
+}
+.hed{
+  width:98%;
+}
+.imgbody{
+  height: 200px;
+}
