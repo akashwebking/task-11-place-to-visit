@@ -1,6 +1,5 @@
 import React from 'react'
 import './besttimetovisit.css';
-
 import Timetovisit from './BestTimeTovisitContent';
 import firstimage from './assets/besttime/Climate.jpeg';
 import image from './assets/besttime/image.jpeg';
@@ -17,7 +16,7 @@ function BestTimeToVisit() {
 
             <div className="text-center text-lg-start my-5">
                 <h4 className=''>TAMILNADU TOURISM</h4>
-                <h3 className=''>Best Time To Visit Packages </h3>
+                <h3 className=''>Best Time To Visit</h3>
             </div>
             <div className="row">
                 <div className="col-sm-12 col-lg-6">
@@ -28,7 +27,7 @@ function BestTimeToVisit() {
                 </div>
                 <div className="col-lg-6">
 
-                    <p className='text-center text-capitalize fs-5 fw-bold mb-5 '>More about best time to travel to tamilnadu</p>
+                    <h4 className='text-center text-capitalize  mb-5 '>More about best time to travel to tamilnadu</h4>
 
                     <div className="accordion" id="accordionBasic">
                         <div className="accordion-item">
@@ -82,20 +81,20 @@ function BestTimeToVisit() {
                     </div>
                 </div>
             </div>
-            <div className="tindent my-4">
+            <div className="indent my-4">
                 The best time to visit Tamil Nadu is during the winter season, i.e. from November to February when the temperature is relatively low, and pleasant to explore the attractions in the state. Monsoons bring torrential downpour which makes it an inappropriate time to travel through Tamil Nadu. Summer, however, is perfect for exploring the hills stations. Tourists can pick the region they wish to see according to the season because offseason visits could be extremely inconvenient for some.
             </div>
             <div className="text-center my-5">
                 <h3 className='text-uppercase'>tamilnadu tourism</h3>
-                <h6 className='text-capitalize fw-bold mb-5 '>best time to visit</h6>
+                <h6 className='text-capitalize fw-bold hedpad'>best time to visit</h6>
             </div>
-            <div className='content'>
+            <div className='content mt-5'>
                 {Timetovisit.map((time,i) => (
 
                     time.id % 2 === 1 ? (
 
 
-                        <div className='contanier odd mb-4 disable' key={i} id={time.title}>
+                        <div className='contanier odd mb-4 disable mt-5' key={i} id={time.title}>
 
                             <h3 className='my-4 text-center text-lg-start mt-5'>{time.heading}</h3>
 
@@ -128,18 +127,39 @@ function BestTimeToVisit() {
 
                                                     <div className="col-4 image">
                                                     <img src={require(`./assets/besttime/${time.img1}`)} className='img-fluid ' alt={time.img1name} />
-
-                                                        <p className='text-center'>{time.img1name}</p>
+                                                    <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img1name[0]},</p></div> 
+                                                           <div><p>{time.img1name[1]}</p></div>
+                                                           <div><p>{time.img1name[2]}</p></div>
+                                                       
+                                                       </div>
+                                                    
+                                                        
                                                     </div>
 
                                                     <div className="col-4 image">
                                                     <img src={require(`./assets/besttime/${time.img2}`)} className='img-fluid ' alt={time.img2name} />
-                                                        <p className='text-center'>{time.img2name}</p>
+                                                          
+                                                          <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img2name[0]},</p></div> 
+                                                           <div><p>{time.img2name[1]}</p></div>
+                                                           <div><p>{time.img2name[2]}</p></div>
+                                                       
+                                                       </div>
+                                                        
 
                                                     </div>
                                                     <div className="col-4 image">
                                                     <img src={require(`./assets/besttime/${time.img3}`)} className='img-fluid ' alt={time.img3name} />
-                                                        <p className='text-center'>{time.img3name}</p>
+                                                    <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img3name[0]},</p></div> 
+                                                           <div><p>{time.img3name[1]}</p></div>
+                                                           <div><p>{time.img3name[2]}</p></div>
+                                                       
+                                                       </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -157,11 +177,11 @@ function BestTimeToVisit() {
                                     <div className="modalz">
                                         <div className="offcanvas offcanvas-start" tabIndex="-1" id={`offcanvasLeft${time.title}`} aria-labelledby={`offcanvasLeftLabel${time.title}`}>
                                             <div className="offcanvas-header">
-                                                <h4 className="offcanvas-title text-center mx-auto" id="offcanvasExampleLabel">Best time to Visit in {time.sidemain}</h4>
+                                                <h4 className="offcanvas-title text-center mx-auto offcanvaheading" id="offcanvasExampleLabel">Best time to Visit in {time.sidemain}</h4>
                                                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                             </div>
                                             <div className="offcanvas-body">
-                                                <h6 className='my-3  fw-bold text-center'>{time.sidehead1}</h6>
+                                                <h6 className='my-3  fw-bold text-center '>{time.sidehead1}</h6>
                                                 <p className="tindent my-3">{time.sidepara1}</p>
                                                 <h6 className='my-3 fw-bold text-center'>{time.sidehead2}</h6>
                                                 <p className="tindent my-3">{time.sidepara2}</p>
@@ -215,17 +235,35 @@ function BestTimeToVisit() {
 
                                                     <div className="col-4 image">
                                                         <img src={require(`./assets/besttime/${time.img1}`)} className='img-fluid ' alt={time.img1name} />
-                                                        <p className='text-center'>{time.img1name}</p>
+                                                        <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img1name[0]},</p></div> 
+                                                           <div><p>{time.img1name[1]}</p></div>
+                                                           <div><p>{time.img1name[2]}</p></div>
+                                                       
+                                                       </div>
                                                     </div>
 
                                                     <div className="col-4 image">
                                                         <img src={require(`./assets/besttime/${time.img2}`)} className='img-fluid ' alt={time.img2name} />
-                                                        <p className='text-center'>{time.img2name}</p>
+                                                        <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img2name[0]},</p></div> 
+                                                           <div><p>{time.img2name[1]}</p></div>
+                                                           <div><p>{time.img2name[2]}</p></div>
+                                                       
+                                                       </div>
 
                                                     </div>
                                                     <div className="col-4 image">
                                                         <img src={require(`./assets/besttime/${time.img3}`)} className='img-fluid ' alt={time.img3name} />
-                                                        <p className='text-center'>{time.img3name}</p>
+                                                        <div className='imgtext'>
+                                                          
+                                                          <div><p>{time.img3name[0]}</p></div> 
+                                                           <div><p>{time.img3name[1]}</p></div>
+                                                           <div><p>{time.img3name[2]}</p></div>
+                                                       
+                                                       </div>
                                                     </div>
                                                 </div>
 
